@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Stock App Demo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+  			<h1>Stock App Demo</h1>
+				<p>This web app displays stock price data from the <a href="">Quandle WIKI database</a>. Please enter a company's stock ticker symbol (e.g., AAPL for Apple) and select which type of price data to display.</p>
+				<form id='userstockform' method='post' action='userstockform'>
+					<p>
+						Ticker symbol: <input type='text' name='tickersymbol' />
+					</p>
+					<p>
+						<input type='checkbox' name='openingprice' /> Opening price
+						<input type='checkbox' name='adjopeningprice' /> Adjusted opening price
+						<input type='checkbox' name='closingprice' /> Closing price
+						<input type='checkbox' name='adjclosingprice' /> Adjusted closing price
+					</p>
+					<p>
+						<input type='submit' value='Submit' />
+					</p>
+				</form>
+		</div>
+		<hr>
+		<div>
+			Created by <a href="https://www.jayqi.com">Jay Qi</a>. Source code available on <a href="">GitHub</a>.
+		</div>
+	</body>
+</html>
