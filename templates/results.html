@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Stock App Demo: Results for {{tickersymbol}}</title>
+		<title>Stock App Demo: Results for {{name}}</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
 	<body>
 		<div class="container">
 			<h1>Stock App Demo</h1>
-			<h2>Results for {{tickersymbol}}</h2>
+			<h2>Results for {{name}}</h2>
 			<p>{{ div | safe }}</p>
 			<p>Data source: <a href="https://www.quandl.com/data/WIKI/{{tickersymbol}}">https://www.quandl.com/data/WIKI/{{tickersymbol}}</a></p>
 			<a href="/" class="btn btn-primary">Go back</a>
